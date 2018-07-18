@@ -27,10 +27,13 @@ Subdirectories:
 Input: An alignment of `.fasta` sequences.
 
 ## Protocol
+In terms of protocol I was thinking:
 1.  Sort given alignment in chronological order.
-2.  Sample or explicitly calculate difference vector between consecutive sequences (i.e., pr(A -> G)).
+2.  Sample or explicitly calculate difference vector (with sites as indices) between consecutive sequences (i.e., A -> A, G, C, T etc…)
 3.  Calculate probability matrix from difference vectors
 4.  Markov chain for each site in the protein.
+Now we can iteratively "predict" evolution for each site at some future time! But probably not because evolution is messy.
+
 
 ## Results and Conclusions
 
