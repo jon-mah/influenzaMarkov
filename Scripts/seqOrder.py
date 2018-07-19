@@ -11,7 +11,7 @@ from Bio import SeqIO
 import random
 import sys
 
-def main(inputFileName, seed):
+def main(inputFileName, seed, firstYearOfData, lastYearOfData):
 
     random.seed(seed)
 
@@ -32,7 +32,7 @@ def main(inputFileName, seed):
             year1 = int(formattedID.group(1))
             year2 = int(formattedID.group(2))
             if year1 == year2:		# Both years must match
-                if year1 >= 1900 and year1 <= 2019:
+                if year1 >= firstYearOfData and year1 <= lastYearOfData:
                     # If a list for the associated year has already
                     # been created, appends this record to that list
                     if year1 in yearDictionary.keys():
@@ -43,11 +43,10 @@ def main(inputFileName, seed):
 
 
     seqList = []
-    # Fills subsamples with (sequencesPerYear) number of records,
-    # attempting to give different sequences to each subsample.
-    with open('ordered' + inputFileName, 'w') as f:
+    outputFileName = inputFileName[:-6] + '_ordered.fasta'
+    with open(outputFileName, 'w') as f:
         for year in sorted(yearDictionary.keys()):
             seqList.append(yearDictionary[year])
-            f.write(yearDictionary[year])
+            SeqIO.write(yearDictionary[year], f, "fasta")
 
-main(example.fasta, 0)
+main('../Data/example_Influenza.fasta', 0, 1918, 2018)
