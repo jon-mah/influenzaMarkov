@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.5)  19 JUL 2018 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.5)  24 JUL 2018 13:42
 entering extended mode
 **"./Project Proposal.tex"
 ("Project Proposal.tex"
@@ -401,8 +401,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-)
-No file "Project Proposal".aux.
+) ("Project Proposal.aux")
 \openout1 = `"Project Proposal.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -417,7 +416,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
-[1
+ [1
 
 {C:/Users/jonat/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
@@ -426,13 +425,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
 [3] ("Project Proposal.aux") ) 
 Here is how much of TeX's memory you used:
- 1150 strings out of 493305
- 12515 string characters out of 3129803
+ 1152 strings out of 493305
+ 12633 string characters out of 3129803
  71581 words of memory out of 3000000
  4744 multiletter control sequences out of 15000+200000
  8716 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,7n,20p,514b,191s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,7n,20p,869b,204s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/jonat/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/jonat/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jonat/AppData
@@ -448,7 +447,7 @@ ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy6.pfb><C:/Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb>
-Output written on "Project Proposal.pdf" (3 pages, 146818 bytes).
+Output written on "Project Proposal.pdf" (3 pages, 148328 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
