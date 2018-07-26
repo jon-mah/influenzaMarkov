@@ -1,11 +1,11 @@
 """
 The purpose of this script is to translate fasta files
 from nucleotides to codons.
-JCM 7/11/2018
+JCM 7/25/2018
 """
 
 import glob
-def main():
+def main(inputFileName):
     aaDict = {'ttt': 'F', 'tct': 'S', 'tat': 'Y', 'tgt': 'C',
               'ttc': 'F', 'tcc': 'S', 'tac': 'Y', 'tgc': 'C',
               'tta': 'L', 'tca': 'S', 'taa': 'Stop', 'tga': 'Stop',
@@ -23,24 +23,20 @@ def main():
               'gta': 'V', 'gca': 'A', 'gaa': 'E', 'gga': 'G',
               'gtg': 'V', 'gcg': 'A', 'gag': 'E', 'ggg': 'G',
               '---': '?'}
-    sequenceList = ["H1_Human", "H1_Swine", "H3_Human"]
-    for type in sequenceList:
-        fastaList = glob.glob(type + "_Alignments_Subsample_*.fasta")
-        for fileName in fastaList:
-            output = 'PROT_' + fileName
-            with open(fileName, "r") as input:
-                with open(output, "w") as f:
-                    for line in input:
-                        if (line[0] is '>'):
-                            f.write(line)
-                        else:
-                            line = line.lower()
-                            siteNum = int(len(line) / 3)
-                            for i in range(0, siteNum):
-                                index = i * 3
-                                codon = line[index] + line[index + 1] + line[index + 2]
-                                f.write(aaDict[codon])
+    output = inputFileName[:-6] + '_PROT' + inputFileName[-6:]
+    with open(inputFileName, "r") as input:
+        with open(output, "w") as f:
+            for line in input:
+                if (line[0] is '>'):
+                    f.write(line)
+                else:
+                    line = line.lower()
+                    siteNum = int(len(line) / 3)
+                    for i in range(0, siteNum):
+                        index = i * 3
+                        codon = line[index] + line[index + 1] + line[index + 2]
+                        f.write(aaDict[codon])
 
-                            f.write('\n')
+                    f.write('\n')
 
-main()
+main('../Data/example_Influenza_ordered.fasta')
