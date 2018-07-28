@@ -24,7 +24,6 @@ markovMatrices = np.zeros((j,20,20)) #creates a 20x20xnumberSites matrix, or 20x
 for site in range(j): #for each amino acid site in a sequence
     for key in transitionArray[site]:
        markovMatrices[site][letterToNumber[key[0]]][letterToNumber[key[1]]] = transitionArray[site][key]  #first letter of aa, ab, etc.
-       #sum up number transitions for each row, then divide that row by sum
 
     for z in range(20):
         sumRow = np.sum(markovMatrices[site][z])
