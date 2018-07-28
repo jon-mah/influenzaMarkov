@@ -18,4 +18,4 @@ For example, if `fastaOne` was 'FSYC' and `fastaTwo` was 'FSLC', then the differ
 
 *   markovChain (roughly finished)
 
-Takes sequences in and array and outputs a probability matrix. 
+Takes sequences in and array and outputs a probability matrix. Includes what seqDifference.py was intended to do? 
