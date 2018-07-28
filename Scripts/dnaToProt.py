@@ -22,7 +22,7 @@ def main(inputFileName):
               'gtc': 'V', 'gcc': 'A', 'gac': 'D', 'ggc': 'G',
               'gta': 'V', 'gca': 'A', 'gaa': 'E', 'gga': 'G',
               'gtg': 'V', 'gcg': 'A', 'gag': 'E', 'ggg': 'G',
-              '---': '?'}
+              '---': '-'}
     output = inputFileName[:-6] + '_PROT' + inputFileName[-6:]
     with open(inputFileName, "r") as input:
         with open(output, "w") as f:
