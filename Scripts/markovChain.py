@@ -1,4 +1,7 @@
+#sorry for lack of commenting
+
 import numpy as np
+
 
 aminoAcids = ['abbsjdkela','accsedkefa','accregkrfa','aeercgkrff']
 j = len(aminoAcids[0])
@@ -27,11 +30,7 @@ for site in range(j):
        #up everything along that row to find the probability of switching.
        #markovMatrices(letterToNumber[key[0]]) =
        markovMatrices[site][letterToNumber[key[0]]][letterToNumber[key[1]]] = transitionArray[site][key]  #first letter of aa, ab, etc.
-       #print(markovMatrices[site])#[siteNumber]
-       #print(key)
-        #print(letterToNumber[key[0]])
-    #print(markovMatrices[site])
-    #print()
+      
     sum = np.sum(markovMatrices[site]) #Sums total number of transitions, then divides site by number to find probability
     markovMatrices[site] /= sum
     print(markovMatrices[site])
