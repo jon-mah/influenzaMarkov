@@ -15,3 +15,7 @@ This script takes in a sequence of `FASTA` sequences (nucleotides), and then tra
 This script takes in two `FASTA` sequences, and notes the differences by site. I'm thinking we could do this recursively instead of having to annotate differences by hand, because that would suck.
 
 For example, if `fastaOne` was 'FSYC' and `fastaTwo` was 'FSLC', then the difference would be `Y --> L` at index 3. This is accomplished by using a 20 x 20 matrix, where the indexing of row, column indicates a transition from 'row' to 'column'.
+
+*   markovChain (roughly finished)
+
+Takes sequences in and array and outputs a probability matrix. 
