@@ -1,6 +1,6 @@
 import numpy as np
 
-aminoAcids = ['ABBSJDKELA','ACCSEDKEFA','ACCREGKRFA','AEERCGKRFF']
+aminoAcids = ['ACCFSDKELA','ACCSEDKEFA','ACCREGKRFA','AEERCGKRFF']
 j = len(aminoAcids[0])
 transitionArray = []
 
@@ -16,8 +16,8 @@ for k in range(j):
 
 print(transitionArray)
 
-letterToNumber = {'A':0, 'B':1, 'C':2, 'D':3, 'E':4, 'F':5, 'G':6, 'H':7, 'I':8, 'J':9, 'K':10, 'L':11,
-                  'M':12, 'N':13, 'O':14, 'P':15, 'Q':16, 'R':17, 'S':18, 'T':19}
+letterToNumber = {'A':0, 'C':1, 'D':2, 'E':3, 'F':4, 'G':5, 'H':6, 'I':7, 'K':8, 'L':9, 'M':10, 'N':11,
+                  'P':12, 'Q':13, 'R':14, 'S':15, 'T':16, 'V':17, 'W':18, 'Y':19}
 
 markovMatrices = np.zeros((j,20,20)) #creates a 20x20xnumberSites matrix, or 20x20x10 matrix in this case
 
