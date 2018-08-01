@@ -32,7 +32,14 @@ def markov_chain(amino_acids):
         matrix = markov_matrices[k]
         pairs = pairwise(site_array[k])
         for (a,b) in pairs:
-            matrix[BASEPAIRS.index(a)][BASEPAIRS.index(b)] += 1 / (num_amino_acids - 1)
+            matrix[BASEPAIRS.index(a)][BASEPAIRS.index(b)] += 1
+
+    for k in range(num_base_pairs):
+        for j in range(len(BASEPAIRS)):
+            s = sum(markov_matrices[k][j])
+            if (s != 0):
+                for i in range(len(markov_matrices[k][j])):
+                    markov_matrices[k][j][i] /= s
 
     return markov_matrices
 
