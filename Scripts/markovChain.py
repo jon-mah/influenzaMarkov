@@ -17,7 +17,7 @@ def pairwise(A):
 # aminoAcids should be an ordered list of strings, each string being the entire set
 # of basepairs in a single line. Then main(aminoAcids)[k][a][b] is the probability
 # of the k-th amino acid site's chance of mutating from acid a to acid b.
-def main(amino_acids):
+def markov_chain(amino_acids):
     num_base_pairs = len(amino_acids[0])
     num_amino_acids = len(amino_acids)
 
@@ -38,7 +38,7 @@ def main(amino_acids):
 
 
 # Example usage
-print(main(['ACCFSDKELA', 'ACCSEDKEFA', 'ACCREGKRFA', 'AEERCGKRFF']))
+# print(markovChain(['ACCFSDKELA', 'ACCSEDKEFA', 'ACCREGKRFA', 'AEERCGKRFF']))
 # Note that you must print out a site's matrix by itself to view its entire contents,
 # i.e. print(main(...)[0])
 
