@@ -39,4 +39,9 @@ def main(inputFileName):
 
                     f.write('\n')
 
-main('../Data/example_Influenza_ordered.fasta')
+# main('../Data/example_Influenza_ordered.fasta')
+main('../Data/Subsample_0.fasta')
+main('../Data/Subsample_1.fasta')
+main('../Data/Subsample_2.fasta')
+main('../Data/Subsample_3.fasta')
+main('../Data/Subsample_4.fasta')
