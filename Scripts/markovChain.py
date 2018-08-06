@@ -1,6 +1,9 @@
 import numpy as np
 
-
+# Returns a 20x20xnumberOfSites Markov transition matrix using the given aminoAcids.
+# aminoAcids should be an ordered list of strings, each string being the entire set
+# of basepairs in a single line. Then main(aminoAcids)[k][a][b] is the probability
+# of the k-th amino acid site's chance of mutating from acid a to acid b.
 def markov_chain(aminoAcids):
     aminoAcids = ['ACCFSDKELA','ACCSEDKEFA','ACCREGKRFA','AEERCGKRFF']
     j = len(aminoAcids[0])
