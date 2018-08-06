@@ -1,51 +1,45 @@
 import numpy as np
-from itertools import tee
-
-
-# Used for mapping from basepairs into numbers.
-BASEPAIRS = 'ACDEFGHIKLMNPQRSTVWY'
-
-
-# Returns (A_0, A_1), (A_1, A_2), ...
-def pairwise(A):
-    a, b = tee(A)
-    next(b, None)
-    return zip(a, b)
-
 
 # Returns a 20x20xnumberOfSites Markov transition matrix using the given aminoAcids.
 # aminoAcids should be an ordered list of strings, each string being the entire set
 # of basepairs in a single line. Then main(aminoAcids)[k][a][b] is the probability
 # of the k-th amino acid site's chance of mutating from acid a to acid b.
-def markov_chain(amino_acids):
-    num_base_pairs = len(amino_acids[0])
-    num_amino_acids = len(amino_acids)
+def markov_chain(aminoAcids):
+    aminoAcids = ['ACCFSDKELA','ACCSEDKEFA','ACCREGKRFA','AEERCGKRFF']
+    j = len(aminoAcids[0])
+    transitionArray = []
 
-    # Collect each site transition into its own array
-    site_array = []
-    for k in range(num_base_pairs):
-        site_array.append([acid[k] for acid in amino_acids])
+    for k in range(j):
+        aminoAcidTransition = {}
+        for i in range(len(aminoAcids)-1):
+            transition = aminoAcids[i][k] + aminoAcids[i+1][k]
+            if transition in aminoAcidTransition:
+                aminoAcidTransition[transition] += 1
+            else:
+                aminoAcidTransition[transition] = 1
+        transitionArray.append(aminoAcidTransition)
 
-    markov_matrices = np.zeros((num_base_pairs,20,20))
+    letterToNumber = {'A':0, 'C':1, 'D':2, 'E':3, 'F':4, 'G':5, 'H':6, 'I':7, 'K':8, 'L':9, 'M':10, 'N':11,
+    'P':12, 'Q':13, 'R':14, 'S':15, 'T':16, 'V':17, 'W':18, 'Y':19}
 
-    for k in range(num_base_pairs):
-        matrix = markov_matrices[k]
-        pairs = pairwise(site_array[k])
-        for (a,b) in pairs:
-            matrix[BASEPAIRS.index(a)][BASEPAIRS.index(b)] += 1
+    markovMatrices = np.zeros((j,20,20)) #creates a 20x20xnumberSites matrix, or 20x20x10 matrix in this case
 
-    for k in range(num_base_pairs):
-        for j in range(len(BASEPAIRS)):
-            s = sum(markov_matrices[k][j])
-            if (s != 0):
-                for i in range(len(markov_matrices[k][j])):
-                    markov_matrices[k][j][i] /= s
+    for site in range(j): #for each amino acid site in a sequence
+        for key in transitionArray[site]:
+           markovMatrices[site][letterToNumber[key[0]]][letterToNumber[key[1]]] = transitionArray[site][key]  #first letter of aa, ab, etc.
 
-    return markov_matrices
+        for z in range(20):
+            sumRow = np.sum(markovMatrices[site][z])
+            if sumRow != 0:
+                markovMatrices[site][z] /= sumRow
+            else:
+                markovMatrices[site][z] = markovMatrices[site][z]
+
+    return markovMatrices
 
 
 # Example usage
-# print(markovChain(['ACCFSDKELA', 'ACCSEDKEFA', 'ACCREGKRFA', 'AEERCGKRFF']))
+print(markov_chain(['ACCFSDKELA', 'ACCSEDKEFA', 'ACCREGKRFA', 'AEERCGKRFF']))
 # Note that you must print out a site's matrix by itself to view its entire contents,
 # i.e. print(main(...)[0])
 
