@@ -5,7 +5,7 @@ import numpy as np
 # of basepairs in a single line. Then main(aminoAcids)[k][a][b] is the probability
 # of the k-th amino acid site's chance of mutating from acid a to acid b.
 def markov_chain(aminoAcids):
-    aminoAcids = ['ACCFSDKELA','ACCSEDKEFA','ACCREGKRFA','AEERCGKRFF']
+    #aminoAcids = ['ACCFSDKELA','ACCSEDKEFA','ACCREGKRFA','AEERCGKRFF'] only used as example
     j = len(aminoAcids[0])
     transitionArray = []
 
