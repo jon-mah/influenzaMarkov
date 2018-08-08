@@ -39,7 +39,7 @@ def markov_chain(aminoAcids):
             else:
                 markovMatrices[site][z] = markovMatrices[site][z]
 
-        #print(markovMatrices[site]) prints out n 20x20 arrays, n being number of sites
+        #print(markovMatrices[site]) prints out 20x20 matrix for each site
     return markovMatrices
 
 
