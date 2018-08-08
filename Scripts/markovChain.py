@@ -1,5 +1,4 @@
 import numpy as np
-from aminoAcid import aminoAcids
 # Returns a 20x20xnumberOfSites Markov transition matrix using the given aminoAcids.
 # aminoAcids should be an ordered list of strings, each string being the entire set
 # of basepairs in a single line. Then main(aminoAcids)[k][a][b] is the probability
@@ -54,7 +53,7 @@ def markov_chain(aminoAcids):
     return markovMatrices
 
 
-(markov_chain(['ACCFSDKELA', 'CCCSEDKEFA', '-CCREGKRFA', 'AEERCGKRFF']))
+#(markov_chain(['ACCFSDKELA', 'CCCSEDKEFA', '-CCREGKRFA', 'AEERCGKRFF']))
 
 # Note that you must print out a site's matrix by itself to view its entire contents,
 # i.e. print(main(...)[0])
