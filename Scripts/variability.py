@@ -41,9 +41,16 @@ def site_range(amino_acids):
 
 
 # Normalizes site_range so that values are relative to 1
-def site_range_normalized(amino_acids):
+def site_range_normalized(amino_acids, inputFileName):
     ranges = site_range(amino_acids)
     m = max(ranges)
+    outputFileName = inputFileName.replace('.fasta', '_variability.csv')
+    with open(outputFileName, "w") as f:
+        f.write('Site,Variability CLass\n')
+        i = 1
+        for x in ranges:
+            f.write(str(i) + ',' + str(x / m) + '\n')
+            i = i + 1
     return [x / m for x in ranges]
 
 #print(site_range_normalized(['ACCFSDKELF', 'ACCSEDKEFA', 'ACCREGKRFA', 'AEEGCGKRFF']))

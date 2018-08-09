@@ -28,8 +28,8 @@ def main(inputFileName):
     #print(seqList1[0][1])
     site_range_normalized(seqList, inputFileName)
 
-main('..\Data\Subsample_0_PROT.fasta')
-main('..\Data\Subsample_1_PROT.fasta')
-main('..\Data\Subsample_2_PROT.fasta')
-main('..\Data\Subsample_3_PROT.fasta')
-main('..\Data\Subsample_4_PROT.fasta')
+main('../Data/Subsample_0_PROT.fasta')
+main('../Data/Subsample_1_PROT.fasta')
+main('../Data/Subsample_2_PROT.fasta')
+main('../Data/Subsample_3_PROT.fasta')
+main('../Data/Subsample_4_PROT.fasta')
