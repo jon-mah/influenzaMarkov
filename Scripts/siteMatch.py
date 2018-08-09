@@ -6,9 +6,10 @@ def siteMatch(aminoAcid1, aminoAcid2):
     length = len(aminoAcid1)
 
     for i in range(length):
-        if aminoAcid1[i] == aminoAcid2[0][i]:
+        if aminoAcid1[i] == aminoAcid2[i]:
             numberMatches += 1
     percent = numberMatches/length
+
     return percent
 
 #print((siteMatch(['AGGSEDKELA', 'ACCSEDKEFA'])))

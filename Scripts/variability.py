@@ -46,4 +46,4 @@ def site_range_normalized(amino_acids):
     m = max(ranges)
     return [x / m for x in ranges]
 
-print(site_range_normalized(['ACCFSDKELF', 'ACCSEDKEFA', 'ACCREGKRFA', 'AEEGCGKRFF']))
+#print(site_range_normalized(['ACCFSDKELF', 'ACCSEDKEFA', 'ACCREGKRFA', 'AEEGCGKRFF']))
