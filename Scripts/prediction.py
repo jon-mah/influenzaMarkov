@@ -19,7 +19,7 @@ def prediction(amino_acids):
             new_fasta += last_basepair
         else:
             r = rand.uniform(0, 1)
-            print(markov_matrices[k][last_index])
+            #print(markov_matrices[k][last_index])
             for i in range(len(markov_matrices[k][last_index])):
                 r -= markov_matrices[k][last_index][i]
                 if r < 0:

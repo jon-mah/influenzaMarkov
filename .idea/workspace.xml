@@ -14,17 +14,17 @@
       <file leaf-file-name="markovChain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/markovChain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+            <state relative-caret-position="160">
+              <caret line="24" column="136" lean-forward="true" selection-start-line="24" selection-start-column="136" selection-end-line="24" selection-end-column="136" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipeline.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pipeline.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scripts/pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
               <folding>
                 <element signature="e#63#96#0" expanded="true" />
               </folding>
@@ -32,18 +32,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Subsample_0_PROT.fasta" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Subsample_0_PROT.fasta" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/Subsample_0_PROT.fasta">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-26218" />
+            <state relative-caret-position="5249">
+              <caret line="1560" selection-start-line="1560" selection-end-line="1560" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subsample_0_PROT_2017.fasta" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/Subsample_0_PROT_2017.fasta">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="prediction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/prediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="544">
               <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="siteMatch.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Scripts/siteMatch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -56,9 +76,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Scripts/markovChain.py" />
+        <option value="$PROJECT_DIR$/Data/Subsample_0_PROT_2017.fasta" />
         <option value="$PROJECT_DIR$/Scripts/prediction.py" />
+        <option value="$PROJECT_DIR$/Data/Subsample_0_PROT.fasta" />
         <option value="$PROJECT_DIR$/Scripts/pipeline.py" />
+        <option value="$PROJECT_DIR$/Scripts/siteMatch.py" />
+        <option value="$PROJECT_DIR$/Scripts/markovChain.py" />
       </list>
     </option>
   </component>
@@ -73,6 +96,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -123,13 +149,33 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="prediction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="influenzaMarkov" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/prediction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.pipeline" />
       <item itemvalue="Python.markovChain" />
+      <item itemvalue="Python.prediction" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.pipeline" />
+        <item itemvalue="Python.prediction" />
         <item itemvalue="Python.markovChain" />
       </list>
     </recent_temporary>
@@ -174,33 +220,49 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Data/Subsample_0_PROT_2017.fasta">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/markovChain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+        <state relative-caret-position="160">
+          <caret line="24" column="136" lean-forward="true" selection-start-line="24" selection-start-column="136" selection-end-line="24" selection-end-column="136" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/prediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="544">
           <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/siteMatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Subsample_0_PROT.fasta">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5249">
+          <caret line="1560" selection-start-line="1560" selection-end-line="1560" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
           <folding>
             <element signature="e#63#96#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Subsample_0_PROT.fasta">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26218" />
       </provider>
     </entry>
   </component>

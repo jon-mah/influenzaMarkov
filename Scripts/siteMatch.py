@@ -1,10 +1,14 @@
 #Compares two sequences and outputs match ratio.
-def siteMatch(aminoAcids):
+def siteMatch(aminoAcid1, aminoAcid2):
+
     numberMatches = 0
-    for i in range(len(aminoAcids[0])):
-        if aminoAcids[0][i] == aminoAcids[1][i]:
+
+    length = len(aminoAcid1)
+
+    for i in range(length):
+        if aminoAcid1[i] == aminoAcid2[0][i]:
             numberMatches += 1
-    percent = numberMatches/len(aminoAcids[0])
+    percent = numberMatches/length
     return percent
 
-print((siteMatch(['AGGSEDKELA', 'ACCSEDKEFA'])))
+#print((siteMatch(['AGGSEDKELA', 'ACCSEDKEFA'])))

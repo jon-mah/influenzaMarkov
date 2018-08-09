@@ -39,8 +39,6 @@ def markov_chain(aminoAcids):
         for key in transitionArray[site]:
            markovMatrices[site][letterToNumber[key[0]]][letterToNumber[key[1]]] = transitionArray[site][key]  #first letter of aa, ab, etc.
 
-        #markovMatrices = markovMatrices[:, :20, :20]
-        #print(transitionArray[site])
         for z in range(20):
             sumRow = np.sum(markovMatrices[site][z])
             if sumRow != 0:
