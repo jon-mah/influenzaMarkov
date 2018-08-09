@@ -19,10 +19,10 @@ from pymol import cmd, stored
 
 import collections
 
-def PyLabel_H1():
+def labelSub_0():
 
     # Input variables
-    structure = '../../Data/1RVX_trimer_sequentialnumbering.pdb'
+    structure = '../Data/1rvx_trimer_sequentialnumbering.pdb'
 
     # Clear pymol, and get structure
     cmd.delete('all')
@@ -31,59 +31,444 @@ def PyLabel_H1():
     cmd.remove('chain C')
     cmd.hide('all')
     cmd.show('cartoon')
+    cmd.show('ribbon')
     cmd.color('white')
-    # cmd.set('cartoon_transparency', '0.5')
+    cmd.set ("sphere_scale", 0.75)
+    cmd.set('cartoon_transparency', 0.5)
+    cmd.set('sphere_transparency', 0.5)
+    cmd.set('label_size', 20)
     # cmd.color('grey20', structure)
     # cmd.set('cartoon_transparency', '0', structure)
 
-    # read sites into file as list
-    # join into list when separated by '+'
 
-    # Turn on SASA flag
-    cmd.set('dot_solvent', '1')
-    # Set to high accuracy of measurement.
-    cmd.set('dot_density', '2')
+    varDict = {} # maps from variability clas to a list of sites
+    inputFile = '../Data/Subsample_0_PROT_variability.csv' # Reads off of variability.csv
+    with open(inputFile, 'r') as f:
+        for line in f:
+            # Read csv, separate site and variation class information
+            if 'Site' not in line:
+                siteIndex, varClass = line.split(',')
+                varClass = varClass[:-2]
+                siteIndex = int(siteIndex)
+                varClass = float(varClass)
+                # Create a dictionary from variation class to a list of sites
+                if varClass in varDict.keys():
+                    varDict[varClass].append(siteIndex)
+                else:
+                    varDict[varClass] = [siteIndex]
 
-        # Create individual objects for each of the identified sites
-        # Need list of sites
-    individualSites = [150, 161, 206, 237, 323]
-    # for each individual site, highlight them as a red sphere.
-    for x in individualSites:
-        objectName = 'chain A and resi ' + str(x)
-        cmd.select(x, objectName)
-        cmd.color('red', objectName)
-        cmd.show('spheres', objectName)
+    # The number of variation classes for this subsample.
+    numClass = float(len(varDict.keys()))
 
+    colorIndex = 0.0 # Used to iterate
+    # Sorted in ascending order
+    for key in sorted(varDict.iterkeys()):
+        # Develop a color gradient named after variation class
+        cmd.set_color(str(key), [0.00 + colorIndex / numClass, 0.00, 1.00 - colorIndex / numClass])
+        colorIndex = colorIndex + 1
+
+    # Color all the sites according to its variation class
+    for key in sorted(varDict.iterkeys()):
+        siteList_string = ''
+        for x in varDict[key]:
+            objectName = 'chain A and resi ' + str(x)
+            cmd.select(x, objectName)
+            cmd.color(str(key), objectName)
+            cmd.deselect()
+
+    # Capture image
     cmd.set_view ('\
-             1.000000000,    0.000000000,    0.000000000,\
-             0.006956612,   -0.346267730,    0.938110232,\
-            -0.007149160,   -0.938125551,   -0.346219748,\
-             0.000000000,    0.000000000, -404.992340088,\
-            66.348487854,   14.958191872,   14.620470047,\
-            18.658756256,  896.364440918,  -20.000000000 ')
+          0.761710763,   -0.066203296,   -0.644522429,\
+          0.641907752,   -0.058046252,    0.764584303,\
+         -0.088030294,   -0.996115863,   -0.001718835,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
 
-    cmd.set('bg_rgb', '[1,1,1]') # white
-    cmd.set('antialias', '2')
-    cmd.set('ray_opaque_background', 'off')
-    cmd.deselect()
+    cmd.set('bg_rgb', '[1,1,1]') # white background
+    cmd.set('antialias', '2') # Image option for clarity
+    cmd.set('ray_opaque_background', 'off') # Image option for clarity
+    cmd.deselect() # Do not cross object selection
 
     png_width = 1600
     png_height = 1200
 
     # Uncomment to generate a png
     cmd.ray(png_width, png_height)
-    cmd.png('viewA_1RVX_monomer_positiveSelection.png')
+    cmd.png('../Data/subsample_0_viewA.png')
 
     cmd.set_view ('\
-             0.590784729,   -0.273755223,   -0.758965433,\
-             0.749687612,   -0.176127166,    0.637927651,\
-            -0.082892060,   -0.982710958,   -0.165563077,\
-             0.000000000,    0.000000000, -404.992340088,\
-            66.348487854,   14.958191872,   14.620470047,\
-            18.658756256,  896.364440918,  -20.000000000 ')
+          0.409883797,    0.010445972,    0.912075520,\
+         -0.906124771,   -0.109993845,    0.408466846,\
+          0.104589798,   -0.993877053,   -0.035619322,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
 
     # Uncomment to generate a png
     cmd.ray(png_width, png_height)
-    cmd.png('viewB_1RVX_monomer_positiveSelection.png')
+    cmd.png('../Data/subsample_0_viewB.png')
 
-cmd.extend("PyLabel_H1", PyLabel_H1)
+def labelSub_1():
+
+    # Input variables
+    structure = '../Data/1rvx_trimer_sequentialnumbering.pdb'
+
+    # Clear pymol, and get structure
+    cmd.delete('all')
+    cmd.load(structure) # type = 'pdb1'
+    cmd.remove('chain B')
+    cmd.remove('chain C')
+    cmd.hide('all')
+    cmd.show('cartoon')
+    cmd.show('ribbon')
+    cmd.color('white')
+    cmd.set ("sphere_scale", 0.75)
+    cmd.set('cartoon_transparency', 0.5)
+    cmd.set('sphere_transparency', 0.5)
+    cmd.set('label_size', 20)
+    # cmd.color('grey20', structure)
+    # cmd.set('cartoon_transparency', '0', structure)
+
+
+    varDict = {} # maps from variability clas to a list of sites
+    inputFile = '../Data/Subsample_0_PROT_variability.csv' # Reads off of variability.csv
+    with open(inputFile, 'r') as f:
+        for line in f:
+            # Read csv, separate site and variation class information
+            if 'Site' not in line:
+                siteIndex, varClass = line.split(',')
+                varClass = varClass[:-2]
+                siteIndex = int(siteIndex)
+                varClass = float(varClass)
+                # Create a dictionary from variation class to a list of sites
+                if varClass in varDict.keys():
+                    varDict[varClass].append(siteIndex)
+                else:
+                    varDict[varClass] = [siteIndex]
+
+    # The number of variation classes for this subsample.
+    numClass = float(len(varDict.keys()))
+
+    colorIndex = 0.0 # Used to iterate
+    # Sorted in ascending order
+    for key in sorted(varDict.iterkeys()):
+        # Develop a color gradient named after variation class
+        cmd.set_color(str(key), [0.00 + colorIndex / numClass, 0.00, 1.00 - colorIndex / numClass])
+        colorIndex = colorIndex + 1
+
+    # Color all the sites according to its variation class
+    for key in sorted(varDict.iterkeys()):
+        siteList_string = ''
+        for x in varDict[key]:
+            objectName = 'chain A and resi ' + str(x)
+            cmd.select(x, objectName)
+            cmd.color(str(key), objectName)
+            cmd.deselect()
+
+    # Capture image
+    cmd.set_view ('\
+          0.761710763,   -0.066203296,   -0.644522429,\
+          0.641907752,   -0.058046252,    0.764584303,\
+         -0.088030294,   -0.996115863,   -0.001718835,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
+
+    cmd.set('bg_rgb', '[1,1,1]') # white background
+    cmd.set('antialias', '2') # Image option for clarity
+    cmd.set('ray_opaque_background', 'off') # Image option for clarity
+    cmd.deselect() # Do not cross object selection
+
+    png_width = 1600
+    png_height = 1200
+
+    # Uncomment to generate a png
+    cmd.ray(png_width, png_height)
+    cmd.png('../Data/subsample_1_viewA.png')
+
+    cmd.set_view ('\
+          0.409883797,    0.010445972,    0.912075520,\
+         -0.906124771,   -0.109993845,    0.408466846,\
+          0.104589798,   -0.993877053,   -0.035619322,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
+
+    # Uncomment to generate a png
+    cmd.ray(png_width, png_height)
+    cmd.png('../Data/subsample_1_viewB.png')
+
+def labelSub_2():
+
+    # Input variables
+    structure = '../Data/1rvx_trimer_sequentialnumbering.pdb'
+
+    # Clear pymol, and get structure
+    cmd.delete('all')
+    cmd.load(structure) # type = 'pdb1'
+    cmd.remove('chain B')
+    cmd.remove('chain C')
+    cmd.hide('all')
+    cmd.show('cartoon')
+    cmd.show('ribbon')
+    cmd.color('white')
+    cmd.set ("sphere_scale", 0.75)
+    cmd.set('cartoon_transparency', 0.5)
+    cmd.set('sphere_transparency', 0.5)
+    cmd.set('label_size', 20)
+    # cmd.color('grey20', structure)
+    # cmd.set('cartoon_transparency', '0', structure)
+
+    varDict = {} # maps from variability clas to a list of sites
+    inputFile = '../Data/Subsample_0_PROT_variability.csv' # Reads off of variability.csv
+    with open(inputFile, 'r') as f:
+        for line in f:
+            # Read csv, separate site and variation class information
+            if 'Site' not in line:
+                siteIndex, varClass = line.split(',')
+                varClass = varClass[:-2]
+                siteIndex = int(siteIndex)
+                varClass = float(varClass)
+                # Create a dictionary from variation class to a list of sites
+                if varClass in varDict.keys():
+                    varDict[varClass].append(siteIndex)
+                else:
+                    varDict[varClass] = [siteIndex]
+
+    # The number of variation classes for this subsample.
+    numClass = float(len(varDict.keys()))
+
+    colorIndex = 0.0 # Used to iterate
+    # Sorted in ascending order
+    for key in sorted(varDict.iterkeys()):
+        # Develop a color gradient named after variation class
+        cmd.set_color(str(key), [0.00 + colorIndex / numClass, 0.00, 1.00 - colorIndex / numClass])
+        colorIndex = colorIndex + 1
+
+    # Color all the sites according to its variation class
+    for key in sorted(varDict.iterkeys()):
+        siteList_string = ''
+        for x in varDict[key]:
+            objectName = 'chain A and resi ' + str(x)
+            cmd.select(x, objectName)
+            cmd.color(str(key), objectName)
+            cmd.deselect()
+
+    # Capture image
+    cmd.set_view ('\
+          0.761710763,   -0.066203296,   -0.644522429,\
+          0.641907752,   -0.058046252,    0.764584303,\
+         -0.088030294,   -0.996115863,   -0.001718835,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
+
+    cmd.set('bg_rgb', '[1,1,1]') # white background
+    cmd.set('antialias', '2') # Image option for clarity
+    cmd.set('ray_opaque_background', 'off') # Image option for clarity
+    cmd.deselect() # Do not cross object selection
+
+    png_width = 1600
+    png_height = 1200
+
+    # Uncomment to generate a png
+    cmd.ray(png_width, png_height)
+    cmd.png('../Data/subsample_2_viewA.png')
+
+    cmd.set_view ('\
+          0.409883797,    0.010445972,    0.912075520,\
+         -0.906124771,   -0.109993845,    0.408466846,\
+          0.104589798,   -0.993877053,   -0.035619322,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
+
+    # Uncomment to generate a png
+    cmd.ray(png_width, png_height)
+    cmd.png('../Data/subsample_2_viewB.png')
+
+def labelSub_3():
+
+    # Input variables
+    structure = '../Data/1rvx_trimer_sequentialnumbering.pdb'
+
+    # Clear pymol, and get structure
+    cmd.delete('all')
+    cmd.load(structure) # type = 'pdb1'
+    cmd.remove('chain B')
+    cmd.remove('chain C')
+    cmd.hide('all')
+    cmd.show('cartoon')
+    cmd.show('ribbon')
+    cmd.color('white')
+    cmd.set ("sphere_scale", 0.75)
+    cmd.set('cartoon_transparency', 0.5)
+    cmd.set('sphere_transparency', 0.5)
+    cmd.set('label_size', 20)
+    # cmd.color('grey20', structure)
+    # cmd.set('cartoon_transparency', '0', structure)
+
+    varDict = {} # maps from variability clas to a list of sites
+    inputFile = '../Data/Subsample_0_PROT_variability.csv' # Reads off of variability.csv
+    with open(inputFile, 'r') as f:
+        for line in f:
+            # Read csv, separate site and variation class information
+            if 'Site' not in line:
+                siteIndex, varClass = line.split(',')
+                varClass = varClass[:-2]
+                siteIndex = int(siteIndex)
+                varClass = float(varClass)
+                # Create a dictionary from variation class to a list of sites
+                if varClass in varDict.keys():
+                    varDict[varClass].append(siteIndex)
+                else:
+                    varDict[varClass] = [siteIndex]
+
+    # The number of variation classes for this subsample.
+    numClass = float(len(varDict.keys()))
+
+    colorIndex = 0.0 # Used to iterate
+    # Sorted in ascending order
+    for key in sorted(varDict.iterkeys()):
+        # Develop a color gradient named after variation class
+        cmd.set_color(str(key), [0.00 + colorIndex / numClass, 0.00, 1.00 - colorIndex / numClass])
+        colorIndex = colorIndex + 1
+
+    # Color all the sites according to its variation class
+    for key in sorted(varDict.iterkeys()):
+        siteList_string = ''
+        for x in varDict[key]:
+            objectName = 'chain A and resi ' + str(x)
+            cmd.select(x, objectName)
+            cmd.color(str(key), objectName)
+            cmd.deselect()
+
+    # Capture image
+    cmd.set_view ('\
+          0.761710763,   -0.066203296,   -0.644522429,\
+          0.641907752,   -0.058046252,    0.764584303,\
+         -0.088030294,   -0.996115863,   -0.001718835,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
+
+    cmd.set('bg_rgb', '[1,1,1]') # white background
+    cmd.set('antialias', '2') # Image option for clarity
+    cmd.set('ray_opaque_background', 'off') # Image option for clarity
+    cmd.deselect() # Do not cross object selection
+
+    png_width = 1600
+    png_height = 1200
+
+    # Uncomment to generate a png
+    cmd.ray(png_width, png_height)
+    cmd.png('../Data/subsample_3_viewA.png')
+
+    cmd.set_view ('\
+          0.409883797,    0.010445972,    0.912075520,\
+         -0.906124771,   -0.109993845,    0.408466846,\
+          0.104589798,   -0.993877053,   -0.035619322,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
+
+    # Uncomment to generate a png
+    cmd.ray(png_width, png_height)
+    cmd.png('../Data/subsample_3_viewB.png')
+
+def labelSub_4():
+
+    # Input variables
+    structure = '../Data/1rvx_trimer_sequentialnumbering.pdb'
+
+    # Clear pymol, and get structure
+    cmd.delete('all')
+    cmd.load(structure) # type = 'pdb1'
+    cmd.remove('chain B')
+    cmd.remove('chain C')
+    cmd.hide('all')
+    cmd.show('cartoon')
+    cmd.show('ribbon')
+    cmd.color('white')
+    cmd.set ("sphere_scale", 0.75)
+    cmd.set('cartoon_transparency', 0.5)
+    cmd.set('sphere_transparency', 0.5)
+    cmd.set('label_size', 20)
+    # cmd.color('grey20', structure)
+    # cmd.set('cartoon_transparency', '0', structure)
+
+
+    varDict = {} # maps from variability clas to a list of sites
+    inputFile = '../Data/Subsample_0_PROT_variability.csv' # Reads off of variability.csv
+    with open(inputFile, 'r') as f:
+        for line in f:
+            # Read csv, separate site and variation class information
+            if 'Site' not in line:
+                siteIndex, varClass = line.split(',')
+                varClass = varClass[:-2]
+                siteIndex = int(siteIndex)
+                varClass = float(varClass)
+                # Create a dictionary from variation class to a list of sites
+                if varClass in varDict.keys():
+                    varDict[varClass].append(siteIndex)
+                else:
+                    varDict[varClass] = [siteIndex]
+
+    # The number of variation classes for this subsample.
+    numClass = float(len(varDict.keys()))
+
+    colorIndex = 0.0 # Used to iterate
+    # Sorted in ascending order
+    for key in sorted(varDict.iterkeys()):
+        # Develop a color gradient named after variation class
+        cmd.set_color(str(key), [0.00 + colorIndex / numClass, 0.00, 1.00 - colorIndex / numClass])
+        colorIndex = colorIndex + 1
+
+    # Color all the sites according to its variation class
+    for key in sorted(varDict.iterkeys()):
+        siteList_string = ''
+        for x in varDict[key]:
+            objectName = 'chain A and resi ' + str(x)
+            cmd.select(x, objectName)
+            cmd.color(str(key), objectName)
+            cmd.deselect()
+
+    # Capture image
+    cmd.set_view ('\
+          0.761710763,   -0.066203296,   -0.644522429,\
+          0.641907752,   -0.058046252,    0.764584303,\
+         -0.088030294,   -0.996115863,   -0.001718835,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
+
+    cmd.set('bg_rgb', '[1,1,1]') # white background
+    cmd.set('antialias', '2') # Image option for clarity
+    cmd.set('ray_opaque_background', 'off') # Image option for clarity
+    cmd.deselect() # Do not cross object selection
+
+    png_width = 1600
+    png_height = 1200
+
+    # Uncomment to generate a png
+    cmd.ray(png_width, png_height)
+    cmd.png('../Data/subsample_4_viewA.png')
+
+    cmd.set_view ('\
+          0.409883797,    0.010445972,    0.912075520,\
+         -0.906124771,   -0.109993845,    0.408466846,\
+          0.104589798,   -0.993877053,   -0.035619322,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
+
+    # Uncomment to generate a png
+    cmd.ray(png_width, png_height)
+    cmd.png('../Data/subsample_4_viewB.png')
+
+cmd.extend("labelSub_0", labelSub_0)
+cmd.extend("labelSub_1", labelSub_1)
+cmd.extend("labelSub_2", labelSub_2)
+cmd.extend("labelSub_3", labelSub_3)
+cmd.extend("labelSub_4", labelSub_4)
