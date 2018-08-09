@@ -11,6 +11,6 @@ def main(inputFileName):
     for record in SeqIO.parse(inputFileName, "fasta"):
         seqList.append(str(record.seq))
 
-    prediction(seqList)
+    print(prediction(seqList))
 
-main('../Data/Subsample_0_PROT.fasta')
+main('..\Data\Subsample_0_PROT.fasta')

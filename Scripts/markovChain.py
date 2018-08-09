@@ -19,16 +19,15 @@ def markov_chain(aminoAcids):
         for i in range(len(aminoAcids)-1):
 
             transition = aminoAcids[i][k] + aminoAcids[i+1][k]
-
-            if aminoAcids[i][k] == '-':
-                for key in letterToNumber:
-                    aminoAcidTransition[key + aminoAcids[i+1][k]] = aminoAcidTransition.setdefault(key + aminoAcids[i+1][k],0) + .05
-            elif aminoAcids [i+1][k] == '-':
-                for key in letterToNumber:
-                    aminoAcidTransition[aminoAcids[i][k] + key] = aminoAcidTransition.setdefault(aminoAcids[i][k] + key,0) + .05
-
-            else:
-                aminoAcidTransition[transition] = aminoAcidTransition.setdefault(transition, 0) + 1
+            if transition != '--':
+                if aminoAcids[i][k] == '-':
+                    for key in letterToNumber:
+                        aminoAcidTransition[key + aminoAcids[i+1][k]] = aminoAcidTransition.setdefault(key + aminoAcids[i+1][k],0) + .05
+                elif aminoAcids [i+1][k] == '-':
+                    for key in letterToNumber:
+                        aminoAcidTransition[aminoAcids[i][k] + key] = aminoAcidTransition.setdefault(aminoAcids[i][k] + key,0) + .05
+                else:
+                    aminoAcidTransition[transition] = aminoAcidTransition.setdefault(transition, 0) + 1
 
         transitionArray.append(aminoAcidTransition)
 

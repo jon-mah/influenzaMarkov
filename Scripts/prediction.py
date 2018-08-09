@@ -31,4 +31,4 @@ def prediction(amino_acids):
 
 
 # Example usage
-print(prediction(['ACCFSDKELF', 'ACCSEDKEFA', 'ACCREGKRFA', 'AEEGCGKRFF']))
+#print(prediction(['ACCFSDKELF', 'ACCSEDKEFA', 'ACCREGKRFA', 'AEEGCGKRFF']))
