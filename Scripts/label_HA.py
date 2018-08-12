@@ -33,9 +33,9 @@ def labelSub_0():
     cmd.show('cartoon')
     cmd.show('ribbon')
     cmd.color('white')
-    cmd.set ("sphere_scale", 0.75)
+    cmd.set ("sphere_scale", 1.0)
     cmd.set('cartoon_transparency', 0.5)
-    cmd.set('sphere_transparency', 0.5)
+    cmd.set('sphere_transparency', 0.0)
     cmd.set('label_size', 20)
     # cmd.color('grey20', structure)
     # cmd.set('cartoon_transparency', '0', structure)
@@ -71,10 +71,16 @@ def labelSub_0():
     for key in sorted(varDict.iterkeys()):
         siteList_string = ''
         for x in varDict[key]:
-            objectName = 'chain A and resi ' + str(x)
-            cmd.select(x, objectName)
-            cmd.color(str(key), objectName)
-            cmd.deselect()
+            if key > 0.99:
+                objectName = 'chain A and resi ' + str(x)
+                cmd.select(x, objectName)
+                cmd.color('red', objectName)
+                cmd.show('spheres', objectName)
+            else:
+                objectName = 'chain A and resi ' + str(x)
+                cmd.select(x, objectName)
+                cmd.color(str(key), objectName)
+                cmd.deselect()
 
     # Capture image
     cmd.set_view ('\
@@ -123,9 +129,9 @@ def labelSub_1():
     cmd.show('cartoon')
     cmd.show('ribbon')
     cmd.color('white')
-    cmd.set ("sphere_scale", 0.75)
+    cmd.set ("sphere_scale", 1.0)
     cmd.set('cartoon_transparency', 0.5)
-    cmd.set('sphere_transparency', 0.5)
+    cmd.set('sphere_transparency', 0.0)
     cmd.set('label_size', 20)
     # cmd.color('grey20', structure)
     # cmd.set('cartoon_transparency', '0', structure)
@@ -161,10 +167,16 @@ def labelSub_1():
     for key in sorted(varDict.iterkeys()):
         siteList_string = ''
         for x in varDict[key]:
-            objectName = 'chain A and resi ' + str(x)
-            cmd.select(x, objectName)
-            cmd.color(str(key), objectName)
-            cmd.deselect()
+            if key > 0.99:
+                objectName = 'chain A and resi ' + str(x)
+                cmd.select(x, objectName)
+                cmd.color('red', objectName)
+                cmd.show('spheres', objectName)
+            else:
+                objectName = 'chain A and resi ' + str(x)
+                cmd.select(x, objectName)
+                cmd.color(str(key), objectName)
+                cmd.deselect()
 
     # Capture image
     cmd.set_view ('\
@@ -213,9 +225,9 @@ def labelSub_2():
     cmd.show('cartoon')
     cmd.show('ribbon')
     cmd.color('white')
-    cmd.set ("sphere_scale", 0.75)
+    cmd.set ("sphere_scale", 1.0)
     cmd.set('cartoon_transparency', 0.5)
-    cmd.set('sphere_transparency', 0.5)
+    cmd.set('sphere_transparency', 0.0)
     cmd.set('label_size', 20)
     # cmd.color('grey20', structure)
     # cmd.set('cartoon_transparency', '0', structure)
@@ -250,10 +262,16 @@ def labelSub_2():
     for key in sorted(varDict.iterkeys()):
         siteList_string = ''
         for x in varDict[key]:
-            objectName = 'chain A and resi ' + str(x)
-            cmd.select(x, objectName)
-            cmd.color(str(key), objectName)
-            cmd.deselect()
+            if key > 0.99:
+                objectName = 'chain A and resi ' + str(x)
+                cmd.select(x, objectName)
+                cmd.color('red', objectName)
+                cmd.show('spheres', objectName)
+            else:
+                objectName = 'chain A and resi ' + str(x)
+                cmd.select(x, objectName)
+                cmd.color(str(key), objectName)
+                cmd.deselect()
 
     # Capture image
     cmd.set_view ('\
@@ -302,9 +320,9 @@ def labelSub_3():
     cmd.show('cartoon')
     cmd.show('ribbon')
     cmd.color('white')
-    cmd.set ("sphere_scale", 0.75)
+    cmd.set ("sphere_scale", 1.0)
     cmd.set('cartoon_transparency', 0.5)
-    cmd.set('sphere_transparency', 0.5)
+    cmd.set('sphere_transparency', 0.0)
     cmd.set('label_size', 20)
     # cmd.color('grey20', structure)
     # cmd.set('cartoon_transparency', '0', structure)
@@ -339,10 +357,16 @@ def labelSub_3():
     for key in sorted(varDict.iterkeys()):
         siteList_string = ''
         for x in varDict[key]:
-            objectName = 'chain A and resi ' + str(x)
-            cmd.select(x, objectName)
-            cmd.color(str(key), objectName)
-            cmd.deselect()
+            if key > 0.99:
+                objectName = 'chain A and resi ' + str(x)
+                cmd.select(x, objectName)
+                cmd.color('red', objectName)
+                cmd.show('spheres', objectName)
+            else:
+                objectName = 'chain A and resi ' + str(x)
+                cmd.select(x, objectName)
+                cmd.color(str(key), objectName)
+                cmd.deselect()
 
     # Capture image
     cmd.set_view ('\
@@ -391,9 +415,9 @@ def labelSub_4():
     cmd.show('cartoon')
     cmd.show('ribbon')
     cmd.color('white')
-    cmd.set ("sphere_scale", 0.75)
+    cmd.set ("sphere_scale", 1.0)
     cmd.set('cartoon_transparency', 0.5)
-    cmd.set('sphere_transparency', 0.5)
+    cmd.set('sphere_transparency', 0.0)
     cmd.set('label_size', 20)
     # cmd.color('grey20', structure)
     # cmd.set('cartoon_transparency', '0', structure)
@@ -429,10 +453,16 @@ def labelSub_4():
     for key in sorted(varDict.iterkeys()):
         siteList_string = ''
         for x in varDict[key]:
-            objectName = 'chain A and resi ' + str(x)
-            cmd.select(x, objectName)
-            cmd.color(str(key), objectName)
-            cmd.deselect()
+            if key > 0.99:
+                objectName = 'chain A and resi ' + str(x)
+                cmd.select(x, objectName)
+                cmd.color('red', objectName)
+                cmd.show('spheres', objectName)
+            else:
+                objectName = 'chain A and resi ' + str(x)
+                cmd.select(x, objectName)
+                cmd.color(str(key), objectName)
+                cmd.deselect()
 
     # Capture image
     cmd.set_view ('\
@@ -467,8 +497,88 @@ def labelSub_4():
     cmd.ray(png_width, png_height)
     cmd.png('../Data/subsample_4_viewB.png')
 
+def labelEpi():
+
+    # Input variables
+    structure = '../Data/1rvx_trimer_sequentialnumbering.pdb'
+
+    # Clear pymol, and get structure
+    cmd.delete('all')
+    cmd.load(structure) # type = 'pdb1'
+    cmd.remove('chain B')
+    cmd.remove('chain C')
+    cmd.hide('all')
+    cmd.show('cartoon')
+    cmd.color('white')
+    cmd.set ("sphere_scale", 1.0)
+    cmd.set('cartoon_transparency', 0.5)
+    cmd.set('sphere_transparency', 0.0)
+    cmd.set('label_size', 20)
+    # cmd.color('grey20', structure)
+    # cmd.set('cartoon_transparency', '0', structure)
+
+    catanSites_Sa = [170, 172, 174, 175, 177, 178, 179]
+
+    catanSites_Sb = [168, 171, 204, 205, 208, 210]
+
+    catanSites_Ca = [181, 185, 219, 252, 152, 155, 157, 236, 237]
+
+    catanSites_Cb = [86, 87, 89, 90, 91, 134]
+
+    # Experimentally identified epitope regions from literature
+    epitopeDict = {'Sa' : catanSites_Sa, 'Sb': catanSites_Sb, 'Ca': catanSites_Ca, 'Cb': catanSites_Cb}
+    colorDict = {'Sa': 'orange', 'Sb': 'yellow', 'Ca': 'green', 'Cb': 'blue'}
+
+    # for each epitope region, color them according to colorDict
+    # If a sphere overlaps with an epitope region, it will update color
+    for epi in ['Sa', 'Sb', 'Ca', 'Cb']:
+        catanSites_string = ''
+        for x in epitopeDict[epi]:
+            catanSites_string = catanSites_string + '+' + str(x)
+        objectName = 'chain A and resi ' + catanSites_string
+        cmd.select(x, objectName)
+        cmd.color(colorDict[epi], objectName)
+        cmd.show('ribbon', objectName)
+        cmd.deselect()
+
+    # Capture image
+    cmd.set_view ('\
+          0.761710763,   -0.066203296,   -0.644522429,\
+          0.641907752,   -0.058046252,    0.764584303,\
+         -0.088030294,   -0.996115863,   -0.001718835,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
+
+    cmd.set('bg_rgb', '[1,1,1]') # white background
+    cmd.set('antialias', '2') # Image option for clarity
+    cmd.set('ray_opaque_background', 'off') # Image option for clarity
+    cmd.deselect() # Do not cross object selection
+
+    png_width = 1600
+    png_height = 1200
+
+    # Uncomment to generate a png
+    cmd.ray(png_width, png_height)
+    cmd.png('../Data/expEpi_viewA.png')
+
+    cmd.set_view ('\
+          0.409883797,    0.010445972,    0.912075520,\
+         -0.906124771,   -0.109993845,    0.408466846,\
+          0.104589798,   -0.993877053,   -0.035619322,\
+         -0.000290386,    0.000054881, -404.986755371,\
+         76.299804688,    0.619804382,   19.037372589,\
+        319.299041748,  490.685638428,  -20.000000000' )
+
+    # Uncomment to generate a png
+    cmd.ray(png_width, png_height)
+    cmd.png('../Data/expEpi_viewB.png')
+
+
+
 cmd.extend("labelSub_0", labelSub_0)
 cmd.extend("labelSub_1", labelSub_1)
 cmd.extend("labelSub_2", labelSub_2)
 cmd.extend("labelSub_3", labelSub_3)
 cmd.extend("labelSub_4", labelSub_4)
+cmd.extend("labelEpi", labelEpi)
