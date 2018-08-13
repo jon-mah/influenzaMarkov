@@ -1,6 +1,6 @@
-# Math_381
+# A Discrete-time Markov Process for Predicting Influenza Evolution
 
-## Authors (Alphabetical by Last Name))
+## Authors (Alphabetical by Last Name)
 Emily Brunelli, University of Washington
 
 Gunnar Johnson, University of Washington
@@ -14,31 +14,16 @@ Sean Griffin, University of Washington
 
 ## Goals and Motivations
 
+Our goal is to investigate the application of a discrete-time Markov process towards predicting Influenza evolution.
+
 ## Organization
 Subdirectories:
 
-*  `\Scripts\`: Contains the relevant scripts and pipeline.
+*  `\Scripts\`: Contains the relevant scripts and pipeline used for this analysis.
 
-*  `\Manuscript\`: Contains the relevant files pertaining to the project proposal and final paper.
+*  `\Manuscript\`: Contains the relevant files pertaining to the project proposal, presentation, and final paper.
 
 *  `\Data\`: Contains the data used in this analysis.
 
 ## Input data
-Input: An alignment of `.fasta` sequences.
-
-## Protocol
-In terms of protocol I was thinking:
-1.  Sort given alignment in chronological order.
-2.  Sample or explicitly calculate difference vector (with sites as indices) between consecutive sequences (i.e., A -> A, G, C, T etc…)
-3.  Calculate probability matrix from difference vectors
-4.  Markov chain for each site in the protein.
-Now we can iteratively "predict" evolution for each site at some future time! But probably not because evolution is messy.
-
-
-## Results and Conclusions
-
-## To-do
-*  The project
-*  Team-name / project name?
-
-## References
+This analysis is run on  `FASTA` sequences, which were all downloaded from the NCBI Influenza Virus Resource Database.
