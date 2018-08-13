@@ -1,0 +1,146 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Bao et~al.(2008)Bao, Bolotov, Dernovoy, Kiryutin, Zaslavsky,
+  Tatusova, Ostell, and Lipman}]{bao2008influenza}
+Bao Y, Bolotov P, Dernovoy D, Kiryutin B, Zaslavsky L, Tatusova T, Ostell J,
+  Lipman D. 2008.
+\newblock The influenza virus resource at the national center for biotechnology
+  information.
+\newblock \emph{Journal of virology}. 82:596--601.
+
+\bibitem[{Bloom(2017)}]{bloom2017identification}
+Bloom JD. 2017.
+\newblock Identification of positive selection in genes is greatly improved by
+  using experimentally informed site-specific models.
+\newblock \emph{Biology direct}. 12:1.
+
+\bibitem[{Brendel et~al.(1986)Brendel, Beckmann, and
+  Trifonov}]{brendel1986linguistics}
+Brendel V, Beckmann JS, Trifonov EN. 1986.
+\newblock Linguistics of nucleotide sequences: morphology and comparison of
+  vocabularies.
+\newblock \emph{Journal of Biomolecular Structure and Dynamics}. 4:11--21.
+
+\bibitem[{Caton et~al.(1982)Caton, Brownlee, Yewdell, and
+  Gerhard}]{caton1982antigenic}
+Caton AJ, Brownlee GG, Yewdell JW, Gerhard W. 1982.
+\newblock The antigenic structure of the influenza virus a/pr/8/34
+  hemagglutinin (h1 subtype).
+\newblock \emph{Cell}. 31:417--427.
+
+\bibitem[{Coburn et~al.(2009)Coburn, Wagner, and Blower}]{coburn2009modeling}
+Coburn BJ, Wagner BG, Blower S. 2009.
+\newblock Modeling influenza epidemics and pandemics: insights into the future
+  of swine flu (h1n1).
+\newblock \emph{BMC medicine}. 7:30.
+
+\bibitem[{Cock et~al.(2009)Cock, Antao, Chang et~al.}]{cock2009biopython}
+Cock PJ, Antao T, Chang JT, et~al. (11 co-authors). 2009.
+\newblock Biopython: freely available python tools for computational molecular
+  biology and bioinformatics.
+\newblock \emph{Bioinformatics}. 25:1422--1423.
+
+\bibitem[{DeLano(2002)}]{delano2002pymol}
+DeLano WL. 2002.
+\newblock Pymol.
+
+\bibitem[{Fowler and Fields(2014)}]{fowler2014deep}
+Fowler DM, Fields S. 2014.
+\newblock Deep mutational scanning: a new style of protein science.
+\newblock \emph{Nature methods}. 11:801.
+
+\bibitem[{Harris et~al.(2008)Harris, Buzby, Babcock et~al.}]{harris2008single}
+Harris TD, Buzby PR, Babcock H, et~al. (11 co-authors). 2008.
+\newblock Single-molecule dna sequencing of a viral genome.
+\newblock \emph{Science}. 320:106--109.
+
+\bibitem[{Hood and Galas(2003)}]{hood2003digital}
+Hood L, Galas D. 2003.
+\newblock The digital code of dna.
+\newblock \emph{Nature}. 421:444.
+
+\bibitem[{Koelle and Rasmussen(2014)}]{koelle2014influenza}
+Koelle K, Rasmussen DA. 2014.
+\newblock Influenza: Prediction is worth a shot.
+\newblock \emph{Nature}. 507:47.
+
+\bibitem[{Kosakovsky~Pond and Frost(2005)}]{kosakovsky2005not}
+Kosakovsky~Pond SL, Frost SD. 2005.
+\newblock Not so different after all: a comparison of methods for detecting
+  amino acid sites under selection.
+\newblock \emph{Molecular biology and evolution}. 22:1208--1222.
+
+\bibitem[{Kosakovsky~Pond et~al.(2008)Kosakovsky~Pond, Poon, Leigh~Brown, and
+  Frost}]{kosakovsky2008maximum}
+Kosakovsky~Pond SL, Poon AF, Leigh~Brown AJ, Frost SD. 2008.
+\newblock A maximum likelihood method for detecting directional evolution in
+  protein sequences and its application to influenza a virus.
+\newblock \emph{Molecular biology and evolution}. 25:1809--1824.
+
+\bibitem[{Leslie(1945)}]{leslie1945use}
+Leslie PH. 1945.
+\newblock On the use of matrices in certain population mathematics.
+\newblock \emph{Biometrika}. pp. 183--212.
+
+\bibitem[{Liu et~al.(2008)Liu, Li, and Tollefsbol}]{liu2008gene}
+Liu L, Li Y, Tollefsbol TO. 2008.
+\newblock Gene-environment interactions and epigenetic basis of human diseases.
+\newblock \emph{Current issues in molecular biology}. 10:25.
+
+\bibitem[{{\L}uksza and L{\"a}ssig(2014)}]{luksza2014predictive}
+{\L}uksza M, L{\"a}ssig M. 2014.
+\newblock A predictive fitness model for influenza.
+\newblock \emph{Nature}. 507:57.
+
+\bibitem[{Morris et~al.(2017)Morris, Gostic, Pompei, Bedford, {\L}uksza, Neher,
+  Grenfell, L{\"a}ssig, and McCauley}]{morris2017predictive}
+Morris DH, Gostic KM, Pompei S, Bedford T, {\L}uksza M, Neher RA, Grenfell BT,
+  L{\"a}ssig M, McCauley JW. 2017.
+\newblock Predictive modeling of influenza shows the promise of applied
+  evolutionary biology.
+\newblock \emph{Trends in microbiology}. .
+
+\bibitem[{Petrova and Russell(2018)}]{petrova2018evolution}
+Petrova VN, Russell CA. 2018.
+\newblock The evolution of seasonal influenza viruses.
+\newblock \emph{Nature Reviews Microbiology}. 16:47.
+
+\bibitem[{Russell et~al.(2014)Russell, Kasson, Donis
+  et~al.}]{russell2014science}
+Russell CA, Kasson PM, Donis RO, et~al. (11 co-authors). 2014.
+\newblock Science forum: Improving pandemic influenza risk assessment.
+\newblock \emph{Elife}. 3:e03883.
+
+\bibitem[{Searls(1995)}]{searls1995string}
+Searls DB. 1995.
+\newblock String variable grammar: A logic grammar formalism for the biological
+  language of dna.
+\newblock \emph{The Journal of Logic Programming}. 24:73--102.
+
+\bibitem[{Stamatakis(2006)}]{stamatakis2006raxml}
+Stamatakis A. 2006.
+\newblock Raxml-vi-hpc: maximum likelihood-based phylogenetic analyses with
+  thousands of taxa and mixed models.
+\newblock \emph{Bioinformatics}. 22:2688--2690.
+
+\bibitem[{Taubenberger et~al.(1997)Taubenberger, Reid, Krafft, Bijwaard, and
+  Fanning}]{taubenberger1997initial}
+Taubenberger JK, Reid AH, Krafft AE, Bijwaard KE, Fanning TG. 1997.
+\newblock Initial genetic characterization of the 1918 “spanish” influenza
+  virus.
+\newblock \emph{Science}. 275:1793--1796.
+
+\bibitem[{Traulsen et~al.(2005)Traulsen, Claussen, and
+  Hauert}]{traulsen2005coevolutionary}
+Traulsen A, Claussen JC, Hauert C. 2005.
+\newblock Coevolutionary dynamics: from finite to infinite populations.
+\newblock \emph{Physical review letters}. 95:238701.
+
+\bibitem[{Wiley and Skehel(1987)}]{wiley1987structure}
+Wiley DC, Skehel JJ. 1987.
+\newblock The structure and function of the hemagglutinin membrane glycoprotein
+  of influenza virus.
+\newblock \emph{Annual review of biochemistry}. 56:365--394.
+
+\end{thebibliography}

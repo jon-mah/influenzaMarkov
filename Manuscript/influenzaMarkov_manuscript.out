@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{section.1}{Abstract}{}% 1
+\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.3}{Assumptions}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Site Independence}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Dashes in FASTA format}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Genetic Continuity}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Insertions and Deletions}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Mathematical Model}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Markov Chain}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Evolutionary Variability}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Solution of the Mathematical Problem}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{Markov Chain}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Evolutionary Variability}{section.5}% 13
+\BOOKMARK [1][-]{section.6}{Testing}{}% 14
+\BOOKMARK [2][-]{subsection.6.1}{Multiple data sets}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.2}{Dashes}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.3}{Markov Chain}{section.6}% 17
+\BOOKMARK [1][-]{section.7}{Results}{}% 18
+\BOOKMARK [2][-]{subsection.7.1}{Markov Chain}{section.7}% 19
+\BOOKMARK [2][-]{subsection.7.2}{Evolutionary Variability}{section.7}% 20
+\BOOKMARK [1][-]{section.8}{Improvements}{}% 21
+\BOOKMARK [1][-]{section.9}{Conclusions}{}% 22
+\BOOKMARK [1][-]{section.10}{Acknowledgements}{}% 23

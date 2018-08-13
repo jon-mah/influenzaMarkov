@@ -2,20 +2,34 @@
 
 This is the scripts directory of `influenzaMarkov`.
 
-*  seqOrder.py (Roughly finished)
-
-This script takes in a sequence of `FASTA` sequences and then orders them, chronologically.
-
-*  dnaToProt.py (Roughly finished)
+*  dnaToProt.py
 
 This script takes in a sequence of `FASTA` sequences (nucleotides), and then translates them into amino acids. As output, it generates a `.fasta` file named `inputFile_PROT.fasta`.
 
-*  seqDifference.py (Not started)
+*  label_HA.py
 
-This script takes in two `FASTA` sequences, and notes the differences by site. I'm thinking we could do this recursively instead of having to annotate differences by hand, because that would suck.
+**This script must be run from the PyMOL interface.** It can be used to generate three-dimensional models of the variation in our data sets, as well as model the known epitope locations from literature.
 
-For example, if `fastaOne` was 'FSYC' and `fastaTwo` was 'FSLC', then the difference would be `Y --> L` at index 3. This is accomplished by using a 20 x 20 matrix, where the indexing of row, column indicates a transition from 'row' to 'column'.
+*  markovChain.py
 
-*   markovChain (roughly finished)
+This script constructs a transition matrix of amino-acid substitution probabilities for use in a Markov chain.
 
-Takes sequences in and array and outputs a probability matrix. Includes what seqDifference.py was intended to do? 
+*  **pipeline.py**
+
+**If you want to recreate our analysis, run this script from the command line. You need to have the BioPython package installed.**
+
+*  seqOrder.py
+
+This script takes in a sequence of `FASTA` sequences and then orders them, chronologically.
+
+*  siteMatch.py
+
+This script compares the percentage of matching sites between two sequences. It's used to calculate the accuracy of predictions compared to actual sequences.
+
+*  subsampleData.py
+
+This script generates random subsamples of FASTA sequences.
+
+*  variability.py
+
+This script contains various functions that compute measures of variability for sequences of FASTA data. The required input is the same format as markovChain.py

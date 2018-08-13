@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: influenzaMarkov_manuscript.aux
+The style file: mbe.bst
+Database file #1: references.bib.bib
+You've used 24 entries,
+            2767 wiz_defined-function locations,
+            732 strings with 9217 characters,
+and the built_in function-call counts, 21751 in all, are:
+= -- 2025
+> -- 795
+< -- 13
++ -- 551
+- -- 219
+* -- 1719
+:= -- 3126
+add.period$ -- 118
+call.type$ -- 24
+change.case$ -- 190
+chr.to.int$ -- 24
+cite$ -- 24
+duplicate$ -- 1643
+empty$ -- 1711
+format.name$ -- 288
+if$ -- 4451
+int.to.chr$ -- 1
+int.to.str$ -- 4
+missing$ -- 211
+newline$ -- 123
+num.names$ -- 96
+pop$ -- 501
+preamble$ -- 1
+purify$ -- 166
+quote$ -- 0
+skip$ -- 482
+stack$ -- 0
+substring$ -- 2063
+swap$ -- 474
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 216
+warning$ -- 0
+while$ -- 180
+width$ -- 0
+write$ -- 311

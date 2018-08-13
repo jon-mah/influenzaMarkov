@@ -1,6 +1,92 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+% Use only LaTeX2e, calling the article.cls class and 12-point type.
+
+\documentclass[12pt]{article}
+
+\usepackage[round,semicolon]{natbib}
+\usepackage{etoolbox}
+\AtBeginEnvironment{quote}{\singlespacing\tiny}
+% Use times if you have the font installed; otherwise, comment out the
+% following line.
+
+% added by SKH
+\usepackage{lineno}
+%\linenumbers
+
+\usepackage{times}
+\usepackage{amssymb}
 \usepackage{amsmath}
+
+\usepackage[export]{adjustbox}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+% for adjustwidth
+\usepackage{changepage}
+
+% The following parameters seem to provide a reasonable page setup.
+
+\topmargin 0.0cm
+\oddsidemargin 1cm
+\textwidth 15cm 
+\textheight 21cm
+\footskip 1.0cm
+
+\usepackage{newfloat}
+\usepackage{amsmath}
+\usepackage[labelfont=bf]{caption}
+\usepackage{nameref}
+\usepackage{rotating}
+\usepackage{color}
+\usepackage{float}
+
+% allow bigger floats per here: https://tex.stackexchange.com/a/11382
+\renewcommand{\topfraction}{.95}
+\renewcommand{\bottomfraction}{.95}
+\renewcommand{\textfraction}{.05}
+\renewcommand{\floatpagefraction}{.95}
+\renewcommand{\dbltopfraction}{.66}
+\renewcommand{\dblfloatpagefraction}{.66}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+
+\renewcommand{\figurename}{{}}
+\renewcommand{\thefigure}{{Figure~\arabic{figure}}}
+
+\renewcommand{\tablename}{{}}
+\renewcommand{\thetable}{{Table~\arabic{table}}}
+
+\newfloat{suppfile}{thp}{losuppfile}
+\renewcommand{\thesuppfile}{Supplementary~file~\arabic{suppfile}}
+\floatname{suppfile}{}
+
+\newfloat{suppfig}{thp}{losuppfig}
+\renewcommand{\thesuppfig}{Supplementary~figure~\arabic{suppfig}}
+\floatname{suppfig}{}
+
+%
+\newfloat{supptable}{thp}{losupptable}
+\renewcommand{\thesupptable}{Supplementary~table~\arabic{supptable}}
+\floatname{supptable}{}
+%
+
+\renewcommand{\theequation}{Equation~\arabic{equation}}
+
+\newcommand\skhcomment[1]{{\color{cyan}[#1]}}
+\newcommand\jdbcomment[1]{{\color{red}[#1]}}
+
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue}
+\hypersetup{colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue}
+
+\usepackage{seqsplit}
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
 
 \title{A Discrete-time Markov Process for Predicting Influenza Evolution.
 }
@@ -37,26 +123,11 @@
             \pi_{TA} & \pi_{TC} & \pi_{TG} & \pi_{TT}
         \end{bmatrix}
     \]
-    where $\pi_{jk}$ represents the probability of a site $i$ evolving from $j$ to $k$. We plan to expand upon this problem by translating DNA into Amino acids, which results in FASTA sequences with 20 dimensions instead of 4, and consequently, a $20 \times 20$ transition matrix. Additionally, we were interested in possibly computing the variation of a sites evolution, and mapping out specific sites which evolve faster than expected.
+    where $\pi_{jk}$ represents the probability of a site $i$ evolving from $j$ to $k$. We plan to expand upon this problem by translating DNA into amino-acids, which results in FASTA sequences with 20 dimensions instead of 4, and consequently, a $20 \times 20$ transition matrix. Additionally, we were interested in possibly computing the variation of a sites evolution, and mapping out specific sites which evolve faster than expected.
     \item \textbf{A reference related to your topic (research articles, news articles, textbooks, previous work on the subject).}\\ This article from the Bedford Lab:
     \\ http://bedford.io/pdfs/papers/morris-predictive-modeling.pdf \\ titled ``Predictive Modeling of Influenza Shows the Promise of Applied Evolutionary Biology" is a good review of current efforts to predict Influenza evolution for informed vaccine design.
     \item \textbf{A reference related to your proposed method of solution.}\\ This article by Sergei Pond:\\ https://academic.oup.com/mbe/article/22/5/1208/1066893 \\
-    titled ``Not So Different After All: A Comparison of Methods for Detecting Amino Acid Sites Under Selection" gives a great review of different methods for tackling this type of problem. Most methods start from the basic $4 \times 4$ site-specific transition matrix and then expand upon it. For example, some papers introduce external weighting factors like protein structure, and other papers pre-define a site's expected rate of evolution in order to detect abnormalities.
+    titled ``Not So Different After All: A Comparison of Methods for Detecting amino-acid Sites Under Selection" gives a great review of different methods for tackling this type of problem. Most methods start from the basic $4 \times 4$ site-specific transition matrix and then expand upon it. For example, some papers introduce external weighting factors like protein structure, and other papers pre-define a site's expected rate of evolution in order to detect abnormalities.
 \end{enumerate}
-\newpage
-\maketitle
-\footnotesize{$^*$Denotes equal contribution to work}\\
-
-\section{Abstract}
-\section{Introduction}
-\section{Assumption}
-\section{Mathematical Model}
-\section{Solution of the Mathematical Problem}
-\section{Testing}
-\section{Results}
-\section{Improvements}
-\section{Conclusions}
-\section{Acknowledgements}
-\section{References}
 
 \end{document}

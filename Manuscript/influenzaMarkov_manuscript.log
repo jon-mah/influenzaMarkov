@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.5)  13 AUG 2018 06:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.5)  13 AUG 2018 06:26
 entering extended mode
-**"./Project Proposal.tex"
-("Project Proposal.tex"
+**./influenzaMarkov_manuscript.tex
+(influenzaMarkov_manuscript.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Users\jonat\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -461,24 +461,80 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \extratabsurround=\skip51
 \backup@length=\skip52
 )
-("Project Proposal.aux")
-\openout1 = `"Project Proposal.aux"'.
+\Colsep=\skip53
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 96.
+("C:\Users\jonat\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+"
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count130
+\mult@box=\box34
+\multicol@leftmargin=\dimen146
+\c@unbalance=\count131
+\c@collectmore=\count132
+\doublecol@number=\count133
+\multicoltolerance=\count134
+\multicolpretolerance=\count135
+\full@width=\dimen147
+\page@free=\dimen148
+\premulticols=\dimen149
+\postmulticols=\dimen150
+\multicolsep=\skip54
+\multicolbaselineskip=\skip55
+\partial@page=\box35
+\last@line=\box36
+\maxbalancingoverflow=\dimen151
+\mult@rightbox=\box37
+\mult@grightbox=\box38
+\mult@gfirstbox=\box39
+\mult@firstbox=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\c@columnbadness=\count136
+\c@finalcolumnbadness=\count137
+\last@try=\dimen152
+\multicolovershoot=\dimen153
+\multicolundershoot=\dimen154
+\mult@nat@firstbox=\box58
+\colbreak@box=\box59
+\mc@col@check@num=\count138
+)
+("C:\Users\jonat\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count139
+) (influenzaMarkov_manuscript.aux)
+\openout1 = `influenzaMarkov_manuscript.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 103.
+
 
 ("C:\Users\jonat\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -486,16 +542,16 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ("C:\Users\jonat\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
-\scratchdimen=\dimen146
-\scratchbox=\box34
-\nofMPsegments=\count131
-\nofMParguments=\count132
+\scratchcounter=\count140
+\scratchdimen=\dimen155
+\scratchbox=\box60
+\nofMPsegments=\count141
+\nofMParguments=\count142
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count133
-\MPscratchDim=\dimen147
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
+\MPscratchCnt=\count143
+\MPscratchDim=\dimen156
+\MPnumerator=\count144
+\makeMPintoPDFobject=\count145
 \everyMPtoPDFconversion=\toks31
 )
 ("C:\Users\jonat\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
@@ -518,69 +574,314 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring ON on input line 96.
-LaTeX Info: Redefining \ref on input line 96.
-LaTeX Info: Redefining \pageref on input line 96.
-LaTeX Info: Redefining \nameref on input line 96.
+\AtBeginShipoutBox=\box61
+Package hyperref Info: Link coloring ON on input line 103.
+LaTeX Info: Redefining \ref on input line 103.
+LaTeX Info: Redefining \pageref on input line 103.
+LaTeX Info: Redefining \nameref on input line 103.
+ (influenzaMarkov_manuscript.out) (influenzaMarkov_manuscript.out)
 \@outlinefile=\write3
-\openout3 = `"Project Proposal.out"'.
+\openout3 = `influenzaMarkov_manuscript.out'.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
+LaTeX Font Info:    Try loading font information for U+msa on input line 105.
 
-Overfull \hbox (8.62244pt too wide) in paragraph at lines 113--115
-\OT1/ptm/m/n/12 We will be down-load-ing FASTA align-ments from the NCBI In-flu
-enza Virus Database. 
- []
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 116.
 ("C:\Users\jonat\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 116.
+LaTeX Font Info:    Try loading font information for U+msb on input line 105.
 ("C:\Users\jonat\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 107.
+[1
 
 {C:/Users/jonat/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
- [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+[]\OT1/ptm/m/n/10 When in-dexed by site, we can de-tect
+ []
 
-("Project Proposal.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 128.
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 2 might be wrong on input line 130.
 
 
-Package rerunfilecheck Warning: File `"Project Proposal".out' has changed.
+[2
+
+]
+<H1_Human_Subsample_0.png, id=160, 780.516pt x 503.481pt>
+File: H1_Human_Subsample_0.png Graphic file (type png)
+<use H1_Human_Subsample_0.png>
+Package pdftex.def Info: H1_Human_Subsample_0.png  used on input line 139.
+(pdftex.def)             Requested size: 208.39566pt x 134.42822pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 140.
+See the caption package documentation for explanation.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 140.
+<H1_Human_Subsample_0_closeUp.png, id=162, 400.49625pt x 197.538pt>
+File: H1_Human_Subsample_0_closeUp.png Graphic file (type png)
+<use H1_Human_Subsample_0_closeUp.png>
+Package pdftex.def Info: H1_Human_Subsample_0_closeUp.png  used on input line 1
+45.
+(pdftex.def)             Requested size: 208.39566pt x 102.78967pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 146.
+See the caption package documentation for explanation.
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 3 might be wrong on input line 150.
+
+
+[3 <./H1_Human_Subsample_0.png>]
+<exampleInput.PNG, id=184, 246.32025pt x 96.96225pt>
+File: exampleInput.PNG Graphic file (type png)
+<use exampleInput.PNG>
+Package pdftex.def Info: exampleInput.PNG  used on input line 165.
+(pdftex.def)             Requested size: 208.39566pt x 82.0351pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 166.
+See the caption package documentation for explanation.
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 4 might be wrong on input line 172.
+
+
+[4 <./H1_Human_Subsample_0_closeUp.png> <./exampleInput.PNG>]
+<exampleIntermediate.PNG, id=198, 242.70676pt x 93.34875pt>
+File: exampleIntermediate.PNG Graphic file (type png)
+<use exampleIntermediate.PNG>
+Package pdftex.def Info: exampleIntermediate.PNG  used on input line 175.
+(pdftex.def)             Requested size: 208.39566pt x 80.153pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 176.
+See the caption package documentation for explanation.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 184.
+
+("C:\Users\jonat\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 184.
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+[5 <./exampleIntermediate.PNG>] [6]
+<prediction1.jpg, id=220, 310.81154pt x 63.17308pt>
+File: prediction1.jpg Graphic file (type jpg)
+<use prediction1.jpg>
+Package pdftex.def Info: prediction1.jpg  used on input line 250.
+(pdftex.def)             Requested size: 208.39566pt x 42.3585pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 251.
+See the caption package documentation for explanation.
+
+<changeRelative1918.jpg, id=221, 904.13307pt x 434.63077pt>
+File: changeRelative1918.jpg Graphic file (type jpg)
+<use changeRelative1918.jpg>
+Package pdftex.def Info: changeRelative1918.jpg  used on input line 258.
+(pdftex.def)             Requested size: 208.39566pt x 100.17519pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 259.
+See the caption package documentation for explanation.
+
+<sitesretained.JPG, id=222, 920.30539pt x 451.30846pt>
+File: sitesretained.JPG Graphic file (type jpg)
+<use sitesretained.JPG>
+Package pdftex.def Info: sitesretained.JPG  used on input line 264.
+(pdftex.def)             Requested size: 208.39566pt x 102.19421pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 265.
+See the caption package documentation for explanation.
+
+<examplePrediction.PNG, id=225, 310.15875pt x 119.2455pt>
+File: examplePrediction.PNG Graphic file (type png)
+<use examplePrediction.PNG>
+Package pdftex.def Info: examplePrediction.PNG  used on input line 276.
+(pdftex.def)             Requested size: 208.39566pt x 80.11967pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 277.
+See the caption package documentation for explanation.
+
+[7 <./prediction1.jpg> <./changeRelative1918.jpg> <./sitesretained.JPG>]
+<2017_actual.PNG, id=235, 312.56775pt x 122.25674pt>
+File: 2017_actual.PNG Graphic file (type png)
+<use 2017_actual.PNG>
+Package pdftex.def Info: 2017_actual.PNG  used on input line 284.
+(pdftex.def)             Requested size: 208.39566pt x 81.5105pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 285.
+See the caption package documentation for explanation.
+
+<subsample_0_viewA.png, id=243, 1606.0pt x 1204.5pt>
+File: subsample_0_viewA.png Graphic file (type png)
+<use subsample_0_viewA.png>
+Package pdftex.def Info: subsample_0_viewA.png  used on input line 297.
+(pdftex.def)             Requested size: 208.39566pt x 156.29643pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 298.
+See the caption package documentation for explanation.
+
+<subsample_1_viewA.png, id=244, 1606.0pt x 1204.5pt>
+File: subsample_1_viewA.png Graphic file (type png)
+<use subsample_1_viewA.png>
+Package pdftex.def Info: subsample_1_viewA.png  used on input line 302.
+(pdftex.def)             Requested size: 208.39566pt x 156.29643pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 303.
+See the caption package documentation for explanation.
+
+<subsample_2_viewA.png, id=245, 1606.0pt x 1204.5pt>
+File: subsample_2_viewA.png Graphic file (type png)
+<use subsample_2_viewA.png>
+Package pdftex.def Info: subsample_2_viewA.png  used on input line 307.
+(pdftex.def)             Requested size: 208.39566pt x 156.29643pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 308.
+See the caption package documentation for explanation.
+
+[8 <./examplePrediction.PNG> <./2017_actual.PNG> <./subsample_0_viewA.png> <./s
+ubsample_1_viewA.png>]
+<subsample_3_viewA.png, id=262, 1606.0pt x 1204.5pt>
+File: subsample_3_viewA.png Graphic file (type png)
+<use subsample_3_viewA.png>
+Package pdftex.def Info: subsample_3_viewA.png  used on input line 312.
+(pdftex.def)             Requested size: 208.39566pt x 156.29643pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 313.
+See the caption package documentation for explanation.
+
+<subsample_4_viewA.png, id=263, 1606.0pt x 1204.5pt>
+File: subsample_4_viewA.png Graphic file (type png)
+<use subsample_4_viewA.png>
+Package pdftex.def Info: subsample_4_viewA.png  used on input line 317.
+(pdftex.def)             Requested size: 208.39566pt x 156.29643pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 318.
+See the caption package documentation for explanation.
+
+<expEpi_viewA.png, id=270, 1606.0pt x 1204.5pt>
+File: expEpi_viewA.png Graphic file (type png)
+<use expEpi_viewA.png>
+Package pdftex.def Info: expEpi_viewA.png  used on input line 327.
+(pdftex.def)             Requested size: 208.39566pt x 156.29643pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 328.
+See the caption package documentation for explanation.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 332.
+
+("C:\Users\jonat\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 9 might be wrong on input line 344.
+
+
+[9 <./subsample_2_viewA.png> <./subsample_3_viewA.png> <./subsample_4_viewA.png
+> <./expEpi_viewA.png>]
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 10 might be wrong on input line 360
+.
+
+[10]
+<transitiondictionary.JPG, id=301, 480.62077pt x 270.38077pt>
+File: transitiondictionary.JPG Graphic file (type jpg)
+<use transitiondictionary.JPG>
+Package pdftex.def Info: transitiondictionary.JPG  used on input line 367.
+(pdftex.def)             Requested size: 208.39566pt x 117.2351pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 368.
+See the caption package documentation for explanation.
+
+[11 <./transitiondictionary.JPG>] (influenzaMarkov_manuscript.bbl [12]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
+
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
+ (influenzaMarkov_manuscript.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+
+
+Package rerunfilecheck Warning: File `influenzaMarkov_manuscript.out' has chang
+ed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `"Project Proposal".out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: Checksums for `influenzaMarkov_manuscript.out':
+(rerunfilecheck)             Before: 2F9621298733AF5B296478C84A07E231;1365
+(rerunfilecheck)             After:  92F6D4778792857CB80FA4F4D7AD0E4B;1388.
  ) 
 Here is how much of TeX's memory you used:
- 9224 strings out of 493305
- 140654 string characters out of 3129803
- 232103 words of memory out of 3000000
- 12618 multiletter control sequences out of 15000+200000
- 11496 words of font info for 36 fonts, out of 3000000 for 9000
+ 9871 strings out of 493305
+ 151659 string characters out of 3129803
+ 349927 words of memory out of 3000000
+ 13140 multiletter control sequences out of 15000+200000
+ 22691 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,7n,92p,869b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,9n,92p,1637b,473s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmex10.pfb><C:/Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi12.pfb><C:/Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jonat/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jonat/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jonat
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/j
-onat/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "Project Proposal.pdf" (2 pages, 83691 bytes).
+lic/amsfonts/cm/cmmi10.pfb><C:/Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jonat/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jonat/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jonat/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
+Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb><C:/Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/couri
+er/ucrr8a.pfb><C:/Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
+/times/utmb8a.pfb><C:/Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/urw/times/utmr8a.pfb><C:/Users/jonat/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on influenzaMarkov_manuscript.pdf (13 pages, 2849695 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
